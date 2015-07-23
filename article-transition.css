@@ -1,0 +1,97 @@
+.hidden { 
+	display: none;
+}
+
+.article-content {
+	display: block;
+}
+
+.content-hidden .article-content {
+	display: none !important;
+}
+
+.fade-up-out {
+	opacity: 0;
+	-webkit-transform: scale(0.8) translate3d(0, -10%, 0);
+			transform: scale(0.8) translate3d(0, -10%, 0);
+	-webkit-transition: all 450ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
+    		transition: all 450ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
+}
+
+.easing-upward {
+	-webkit-transition: all 450ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
+			transition: all 450ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
+}
+
+.easing-upward .read-next {
+	opacity: 0 !important;
+}
+
+.post-thumbnail {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	cursor: pointer;
+	display: block;
+	height: 420px;
+	overflow: hidden;
+	position: relative;
+	width: 100vw;
+}
+	
+.post-thumbnail .read-next {
+	background: rgba(0, 0, 0, 0.5);
+	height: 100%;
+	left: 0;
+	opacity: 1;
+	position: absolute;
+	text-align: center;
+	text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+	top: 0;
+	width: 100vw !important;
+	z-index: 1;
+	-webkit-transition: all 450ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
+			transition: all 450ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
+	
+	/* To vertically center it's children */
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-pack:center;
+	-webkit-justify-content:center;
+	-moz-justify-content:center;
+	-ms-flex-pack:center;
+	justify-content:center;
+    -webkit-flex-line-pack:center;
+	-ms-flex-line-pack:center;
+	-webkit-align-content:center;
+	align-content:center;
+    -webkit-flex-direction:column;
+	-moz-flex-direction:column;
+	-ms-flex-direction:column;
+	flex-direction:column;
+}
+
+.post-thumbnail .read-next p {
+	color: rgba(255, 255, 255, 0.9);
+	font-size: 1.1rem;
+	font-style: italic;
+	padding: 0;
+	text-decoration: underline;
+	margin: 0;
+	margin-bottom: 10px;
+}		
+
+.post-thumbnail .read-next h1.entry-title {
+	color: rgba(255, 255, 255, 0.9);
+	background: none;
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+.post-thumbnail img {
+	display: none; /* because it is being used for the background image */
+}
